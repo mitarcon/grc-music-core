@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Artist {
 
 	private String name;
-	private int  listeners;
+	private Integer  listeners;
 	private String mbid;
 	private String url;
 	private int streamable;
@@ -16,10 +16,10 @@ public class Artist {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getListeners() {
+	public Integer getListeners() {
 		return listeners;
 	}
-	public void setListeners(int listeners) {
+	public void setListeners(Integer listeners) {
 		this.listeners = listeners;
 	}
 	public String getMbid() {

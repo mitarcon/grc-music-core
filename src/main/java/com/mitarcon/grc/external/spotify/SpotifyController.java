@@ -1,7 +1,6 @@
 package com.mitarcon.grc.external.spotify;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import org.dozer.DozerBeanMapper;
@@ -34,7 +33,7 @@ public class SpotifyController {
 
 
         List<String> list = new ArrayList<String>();
-        list.add("spotify-mapper.xml");
+        list.add("spotify-artist-mapper.xml");
         Mapper mapper = new DozerBeanMapper(list);
         
         int i;
