@@ -14,11 +14,10 @@ public class ArtistService {
 	
 	public ArrayList<Artist> getArrayArtist(String query, String code){
 		
-		ArrayList<Artist> artist = new ArrayList<Artist>();
+		ArrayList<Artist> artists = new ArrayList<Artist>();
 		SpotifyController spotify = new SpotifyController();
 		
-		artist = spotify.searchArtist(query);
-		log.info("artist is "+artist.size());
+		artists = spotify.searchArtist(query);
 		
 		if ( null == code ){
 //			No existe en BD y debo buscar en los API
@@ -27,6 +26,6 @@ public class ArtistService {
 //			Busco en BD utilizando el code
 		}
 		
-		return artist;
+		return artists;
 	}
 }

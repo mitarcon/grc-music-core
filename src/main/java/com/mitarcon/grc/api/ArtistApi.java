@@ -1,24 +1,25 @@
 package com.mitarcon.grc.api;
 
+import java.util.ArrayList;
+
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.mitarcon.grc.model.Artist;
 import com.mitarcon.grc.services.ArtistService;
 
 @RestController
 public class ArtistApi {
 
 	@RequestMapping("/artist")
-    public String searchArtist (
+    public ArrayList<Artist> searchArtist (
     		@RequestParam("query") String query,
     		@RequestParam("code") String code) {
 		
-//		artistas.search(query,code)
 		ArtistService service = new ArtistService();
-		service.getArrayArtist(query, code);
-        return "Search Artist "+query+" "+code;  	
+        return service.getArrayArtist(query, code);
     }
 	
 	@RequestMapping("/artist/{id}")

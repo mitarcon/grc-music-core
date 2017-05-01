@@ -1,26 +1,28 @@
 package com.mitarcon.grc.model;
 
-import java.util.Arrays;
+import java.util.ArrayList;
+
+import com.mitarcon.grc.model.Track;
 
 public class Artist {
 
 	private String name;
-	private int followers;
+	private Integer followers;
 	private String id;
-	private String img;
+	private String image;
 	private String from;
 	private String url;
-	private Track[] tracks;
+	private ArrayList<Track> tracks;
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getFollowers() {
+	public Integer getFollowers() {
 		return followers;
 	}
-	public void setFollowers(int followers) {
+	public void setFollowers(Integer followers) {
 		this.followers = followers;
 	}
 	public String getId() {
@@ -29,11 +31,11 @@ public class Artist {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public String getImg() {
-		return img;
+	public String getImage() {
+		return image;
 	}
-	public void setImg(String img) {
-		this.img = img;
+	public void setImage(String image) {
+		this.image = image;
 	}
 	public String getFrom() {
 		return from;
@@ -47,17 +49,18 @@ public class Artist {
 	public void setUrl(String url) {
 		this.url = url;
 	}
-	public Track[] getTracks() {
+	public ArrayList<Track> getTracks() {
 		return tracks;
 	}
-	public void setTracks(Track[] tracks) {
+	public void setTracks(ArrayList<Track> tracks) {
 		this.tracks = tracks;
 	}
 	@Override
 	public String toString() {
-		return "Artist [name=" + name + ", followers=" + followers + ", id=" + id + ", img=" + img + ", from=" + from
-				+ ", url=" + url + ", tracks=" + Arrays.toString(tracks) + "]";
+		return "Artist [name=" + name + ", followers=" + followers + ", id=" + id + ", image=" + image + ", from=" + from
+				+ ", url=" + url + ", tracks=" + tracks + "]";
 	}
+
 	
 	
 }

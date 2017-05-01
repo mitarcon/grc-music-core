@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+<mapping map-null="false">
+        <class-a>com.mitarcon.grc.external.spotify.Track</class-a>
+        <class-b>com.mitarcon.grc.model.Track</class-b>
+        <field>
+            <a>name</a>
+            <b>name</b>
+        </field>
+        <field>
+            <a>id</a>
+            <b>id</b>
+        </field>
+        <field>
+            <a>album.images[0].url</a>
+            <b>image</b>
+        </field>
+        <field>
+            <a>external_urls.spotify</a>
+            <b>url</b>
+        </field>
+    </mapping>
+</mappings>
